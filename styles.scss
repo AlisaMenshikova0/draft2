@@ -1,0 +1,318 @@
+// Our SCSS styles
+@import "fonts";
+@import "variables";
+
+//общее
+.screen {
+  max-width: 1920px;
+  width: 100vw;
+}
+
+.button {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: $lightColor;
+  background-color: $themeColor;
+  border: none;
+
+  width: 311px;
+  height: 60px;
+}
+
+.title {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+
+  color: $darkColor;
+  text-align: center;
+}
+//стили для блока instruction
+.instruction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .instruction__background {
+    height: 333px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+
+    background-color: $accentColor;
+  }
+
+  .instruction__imageholder {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruction__image {
+    width: 1309px;
+  }
+
+  .instruction__contentholder {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-bottom: 200px;
+  }
+
+  .instruction__interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: 333px;
+  }
+
+  .instruction__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: $darkColor;
+  }
+
+  .instruction__label {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: $darkColor;
+  }
+
+  .instruction__input {
+    width: 638px;
+    height: 50px;
+    border: none;
+
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: $themeColor;
+  }
+}
+
+//стили для блока place
+
+.place__container {
+  display: flex;
+  justify-content: center;
+}
+
+.place__description-holder {
+  width: 1336px;
+  height: 417px;
+}
+
+.description {
+  margin-bottom: 53px;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.place__text {
+  width: 856px;
+  height: 240px;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 259px;
+  margin-right: 221px;
+  margin-top: 53px;
+  margin-bottom: 200px;
+}
+
+.place__left {
+  position: absolute;
+  left: 0px;
+  margin-bottom: 68px;
+}
+
+.place__right {
+  position: absolute;
+  right: 0px;
+  margin-bottom: 68px;
+}
+
+.branch-l {
+  height: 384px;
+  width: 511px;
+  border-radius: 0px;
+}
+
+.place__garden {
+  width: 1920px;
+  height: 410px;
+  margin-top: 465px;
+  display: flex;
+  gap: 27px;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.place__img-1,
+.place__img-2,
+.place__img-3 {
+  width: 579px;
+  height: 410px;
+}
+
+//стили для блока services
+
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.services__subtitle {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  color: $darkColor;
+  margin-top: 80px;
+}
+
+.services__list {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services__text {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: $darkColor;
+  margin-bottom: 20px;
+}
+
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
+  width: 399px;
+  height: 678px;
+  margin-bottom: 122px;
+  position: relative;
+  margin-right: 70px;
+}
+
+.pencil-logo,
+.tree-logo,
+.fence-logo {
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  top: 0px;
+}
+
+.details_screen {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .details_screen__title {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    .title {
+      font-family: "Noah";
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 87px;
+      letter-spacing: 0px;
+      text-align: left;
+      width: 675.31px;
+    }
+    .details__text {
+      font-family: "Noah";
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 0px;
+      text-align: left;
+      width: 542px;
+    }
+  }
+
+  .arrow-vector {
+    width: 236px;
+    height: 27px;
+    margin-left: -80px;
+  }
+
+  .button {
+    margin-bottom: 90px;
+  }
+  .button_button--round {
+    margin-top: 70px;
+    background-image: url();
+    background-color: $paleColor;
+    color: $lightColor;
+    font-family: "Noah";
+    height: 124px;
+    width: 124px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    border-radius: 50%;
+  }
+}
+.footer {
+  background-color: $themeColor;
+  font-family: "Geometria";
+  align-items: center;
+  color: $lightColor;
+  max-height: 230px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  .footer__text--transparent {
+    opacity: 70%;
+    margin-top: 65px;
+    font-size: 16px;
+  }
+
+  .vesna-logo--round {
+    height: 181.27px;
+  }
+
+  .footer--right {
+    display: flex;
+  }
+}
